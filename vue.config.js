@@ -5,10 +5,8 @@ module.exports = {
       externals: ['ffi'],
       builderOptions: {
         appId: 'net.youcaihua.cashier',
-        artifactName: 'ych-cashier',
-        asar: {
-          asarUnpack: 'foo/*.js',
-        },
+        // artifactName: 'ych-cashier',
+        asar: false,
       },
       chainWebpackMainProcess: config => config,
       chainWebpackRendererProcess: (config) => {
