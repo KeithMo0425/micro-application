@@ -30,7 +30,7 @@ export const CONST_DEFAULT_CONFIG = {
 
 // API 默认配置
 export const API_DEFAULT_CONFIG = {
-  mockBaseURL: 'http://neidebug1.youcaihua.net:8081/nei/mock',
+  mockBaseURL: 'http://neidebug.youcaihua.net:8081/nei/mock',
   mock: true,
   debug: true,
   sep: '/',

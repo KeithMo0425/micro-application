@@ -2,8 +2,8 @@ export default [{
   name: 'info',
   method: 'GET',
   desc: '测试服务处',
-  path: '/YunyouTenant/api/v1/Person/GetChildAccountInfo1',
-  mockPath: '/YunyouTenant/api/v1/Person/GetChildAccountInfo1',
+  path: '/yunyoutenant/api/v1/Order/GetOrderDetail',
+  mockPath: '/yunyoutenant/api/v1/Order/GetOrderDetail',
   params: {
     ID: 1,
   },

@@ -8,11 +8,13 @@
     "lint": "vue-cli-service lint",
     "build:api": "vue-cli-service nei-api-get",
     "build:electron": "vue-cli-service build:electron",
-    "serve:electron": "vue-cli-service serve:electron"
+    "serve:electron": "vue-cli-service serve:electron",
+    "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "element-ui": "^2.4.6",
+    "ffi": "^2.2.0",
     "lodash": "^4.17.10",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
@@ -23,7 +25,7 @@
     "@vue/cli-plugin-eslint": "3.0.1",
     "@vue/cli-service": "3.0.1",
     "@vue/eslint-config-airbnb": "3.0.1",
-    "electron": "^2.0.2",
+    "electron": "2.0.7",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "vue-cli-plugin-electron-builder": "^1.0.0-beta.8",
