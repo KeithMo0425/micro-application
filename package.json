@@ -1,6 +1,8 @@
 {
   "name": "ych-admin",
   "version": "0.1.0",
+  "author": "YCH-FE",
+  "description": "a application",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
