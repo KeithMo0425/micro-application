@@ -6,9 +6,10 @@ module.exports = {
       builderOptions: {
         appId: 'net.youcaihua.cashier',
         artifactName: 'ych-cashier',
-        asar: {
-          asarUnpack: 'foo/*.js',
-        },
+        // asar: {
+        //   asarUnpack: '**/public/dll/*',
+        // },
+        asar: false,
       },
       chainWebpackMainProcess: config => config,
       chainWebpackRendererProcess: (config) => {
