@@ -1,15 +1,6 @@
 module.exports = {
   extends: 'stylelint-config-standard',
-  // plugins: ['stylelint-order'],
   rules: {
-    // 'order/order': [
-    //   'declarations',
-    //   'custom-properties',
-    //   'dollar-variables',
-    //   'rules',
-    //   // 'at-rules',
-    // ],
-
     'color-named': 'never',
     'color-no-hex': true,
     'color-hex-case': 'upper',
