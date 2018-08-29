@@ -8,7 +8,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build:api": "vue-cli-service nei-api-get"
+    "build:api": "vue-cli-service nei-api-get",
+    "commit": "git add . && node_modules/commitizen/bin/git-cz",
+    "commit:custom": "node_modules/commitizen/bin/git-cz"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -24,10 +26,21 @@
     "@vue/cli-plugin-eslint": "3.0.1",
     "@vue/cli-service": "3.0.1",
     "@vue/eslint-config-airbnb": "3.0.1",
+    "commitizen": "^2.10.1",
+    "cz-conventional-changelog": "^2.1.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "stylelint-config-standard": "^18.2.0",
     "vue-cli-plugin-yuntai-project-helper": "^0.1.6",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.17",
+    "yorkie": "^2.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "gitHooks": {
+    "commit-msg": "node git-hooks/verify-commit-msg.js"
   }
 }
