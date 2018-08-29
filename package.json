@@ -7,7 +7,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "lint": "yarn lint:js && yarn lint:style",
+    "lint:js": "vue-cli-service lint",
+    "lint:style": "vue-cli-service lint:style",
     "build:api": "vue-cli-service nei-api-get",
     "commit": "git add . && node_modules/commitizen/bin/git-cz",
     "commit:custom": "node_modules/commitizen/bin/git-cz",
@@ -43,6 +45,7 @@
     }
   },
   "gitHooks": {
+    "pre-commit": "yarn lint && echo 'lint pass'",
     "commit-msg": "node git-hooks/verify-commit-msg.js"
   }
 }
