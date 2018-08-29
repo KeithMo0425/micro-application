@@ -10,7 +10,8 @@
     "lint": "vue-cli-service lint",
     "build:api": "vue-cli-service nei-api-get",
     "commit": "git add . && node_modules/commitizen/bin/git-cz",
-    "commit:custom": "node_modules/commitizen/bin/git-cz"
+    "commit:custom": "node_modules/commitizen/bin/git-cz",
+    "changelog": "node_modules/.bin/conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -27,6 +28,7 @@
     "@vue/cli-service": "3.0.1",
     "@vue/eslint-config-airbnb": "3.0.1",
     "commitizen": "^2.10.1",
+    "conventional-changelog-cli": "^2.0.5",
     "cz-conventional-changelog": "^2.1.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
