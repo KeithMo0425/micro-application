@@ -4,7 +4,8 @@
     <div>
       <p>
         If Element is successfully added to this project, you'll see an
-        <code v-text="'<el-button>'"></code>
+        <code
+          v-text="'<el-button>'"/>
         below
       </p>
       <el-button>el-button</el-button>
@@ -21,7 +22,7 @@
 import HelloWorld from './components/HelloWorld.vue';
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
     HelloWorld,
   },
