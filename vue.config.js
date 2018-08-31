@@ -1,5 +1,6 @@
 // vue.config.js
 module.exports = {
+  lintOnSave: true,
   pluginOptions: {
     lintStyleOnBuild: true,
     stylelint: {
