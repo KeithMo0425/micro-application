@@ -1,3 +1,5 @@
+export const PROJECT_NAME = 'ych-pro-cashier';
+
 export const NODE_ENV = process.env.NODE_ENV || 'production';
 
 // 强制所有请求使用mock
@@ -35,6 +37,9 @@ export const API_DEFAULT_CONFIG = {
   debug: true,
   sep: '/',
 };
+
+// 系统
+export const SYSTEM_LOG_ENABLE = true;
 
 // 开启请求参数打印
 export const CONSOLE_REQUEST_ENABLE = true;
